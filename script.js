@@ -33,7 +33,7 @@ const docLinks = {
 "ES": "https://drive.google.com/uc?export=download&id=",
 "EDC": "https://drive.google.com/uc?export=download&id=",
 "EC": "https://drive.google.com/uc?export=download&id=",
-"EM": "https://drive.google.com/uc?export=download&id=",
+"EM": "https://drive.google.com/uc?export=download&id="
 };
 
 function updateSubjects() {
@@ -84,3 +84,20 @@ function showDocuments() {
   docList.appendChild(li);
   document.getElementById("documents").style.display = "block";
 }
+
+function toggleTheme() {
+  const body = document.body;
+  if (body.classList.contains("dark-mode")) {
+    body.classList.remove("dark-mode");
+    body.classList.add("light-mode");
+  } else {
+    body.classList.remove("light-mode");
+    body.classList.add("dark-mode");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("dark-mode"); // default mode
+  document.getElementById("themeSwitch").checked = false;
+});
+
