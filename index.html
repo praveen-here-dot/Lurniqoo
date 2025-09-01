@@ -3,14 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PrepEasy</title>
-  <link rel="icon" href="favicon.png" type="image/png">
+  <title>Lurniqo</title>
+  <link rel="icon" href="favicon(1).png" type="image/png">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
+    <div class="theme-toggle">
+  <label class="switch">
+    <input type="checkbox" id="themeSwitch" onchange="toggleTheme()" />
+    <span class="slider">
+      <span class="icon moon">🌙</span>
+      <span class="icon sun">☀️</span>
+    </span>
+  </label>
+</div>
     <div class="logo-area">
-      <div class="logo-text">PrepEasy</div>
+      <div class="logo-text">Lurniqo</div>
       <div class="book-icon"></div>
     </div>
 
@@ -72,9 +81,9 @@
   </div>
 
   <footer class="footer">
-    <div class="left">PrepEasy</div>
-    <div class="right">&copy; 2025 PrepEasy. All rights reserved.</div>
-    <div class="tagline">Use PrepEasy for prepare easy.</div>
+    <div class="left">Lurniqo</div>
+    <div class="right">&copy; 2025 Lurniqo. All rights reserved.</div>
+    <div class="tagline">Use Lurniqo for prepare easy.</div>
   </footer>
 
   <script src="script.js" defer></script>
